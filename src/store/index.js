@@ -12,7 +12,7 @@ export default createStore({
 
     state: {
         app: {
-            title: 'Mr. and Ms. San Agustin 2023',
+            title: 'Mr. and Ms. Foundation 2024',
             org: 'ACLC College Iriga',
             backendDir: 'app',
             sideNav: false
@@ -21,8 +21,8 @@ export default createStore({
             height: 0
         },
         rating: {
-            min: 70,
-            max: 100
+            min: 5,
+            max: 10
         },
         deduction: {
             min: 0,
@@ -39,7 +39,7 @@ export default createStore({
         // get app url
         appURL(state) {
             const location = window.location;
-            if(location.hostname === 'localhost' && location.port === '5181')
+            if(location.hostname === 'localhost' && location.port === '5194')
                 return `http://localhost${import.meta.env.BASE_URL}${state.app.backendDir}`;
             else
                 return `${location.protocol}//${location.hostname}${import.meta.env.BASE_URL}${state.app.backendDir}`;
