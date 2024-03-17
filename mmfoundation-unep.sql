@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 15, 2024 at 11:49 PM
+-- Generation Time: Mar 17, 2024 at 06:14 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -429,8 +429,7 @@ INSERT INTO `judges` (`id`, `number`, `name`, `avatar`, `username`, `password`, 
 (2, 2, 'Judge 02', 'no-avatar.jpg', 'judge02', 'judge02', NULL, NULL, NULL, '2023-04-06 13:58:28', '2024-03-15 22:20:46'),
 (3, 3, 'Judge 03', 'no-avatar.jpg', 'judge03', 'judge03', NULL, NULL, NULL, '2023-04-06 13:58:42', '2024-03-15 22:24:50'),
 (4, 4, 'Judge 04', 'no-avatar.jpg', 'judge04', 'judge04', NULL, NULL, NULL, '2023-04-06 13:59:26', '2024-03-15 22:24:50'),
-(5, 5, 'Judge 05', 'no-avatar.jpg', 'judge05', 'judge05', NULL, NULL, NULL, '2023-04-06 14:00:00', '2024-03-15 22:24:50'),
-(6, 6, 'Judge 06', 'no-avatar.jpg', 'judge06', 'judge06', NULL, NULL, NULL, '2024-03-15 17:07:48', '2024-03-15 17:07:48');
+(5, 5, 'Judge 05', 'no-avatar.jpg', 'judge05', 'judge05', NULL, NULL, NULL, '2023-04-06 14:00:00', '2024-03-15 22:24:50');
 
 -- --------------------------------------------------------
 
@@ -491,15 +490,7 @@ INSERT INTO `judge_event` (`id`, `judge_id`, `event_id`, `is_chairman`, `created
 (37, 5, 5, 0, '2024-03-15 22:23:38', '2024-03-15 22:23:38'),
 (38, 5, 6, 0, '2024-03-15 22:23:41', '2024-03-15 22:23:41'),
 (39, 5, 7, 0, '2024-03-15 22:23:45', '2024-03-15 22:23:45'),
-(40, 5, 8, 0, '2024-03-15 22:23:48', '2024-03-15 22:23:48'),
-(41, 6, 1, 0, '2024-03-15 22:23:58', '2024-03-15 22:23:58'),
-(42, 6, 2, 0, '2024-03-15 22:24:02', '2024-03-15 22:24:02'),
-(43, 6, 3, 0, '2024-03-15 22:24:05', '2024-03-15 22:24:05'),
-(44, 6, 4, 0, '2024-03-15 22:24:09', '2024-03-15 22:24:09'),
-(45, 6, 5, 0, '2024-03-15 22:24:12', '2024-03-15 22:24:12'),
-(46, 6, 6, 0, '2024-03-15 22:24:16', '2024-03-15 22:24:16'),
-(47, 6, 7, 0, '2024-03-15 22:24:19', '2024-03-15 22:24:19'),
-(48, 6, 8, 0, '2024-03-15 22:24:23', '2024-03-15 22:24:23');
+(40, 5, 8, 0, '2024-03-15 22:23:48', '2024-03-15 22:23:48');
 
 -- --------------------------------------------------------
 
@@ -976,13 +967,13 @@ ALTER TABLE `events`
 -- AUTO_INCREMENT for table `judges`
 --
 ALTER TABLE `judges`
-  MODIFY `id` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `judge_event`
 --
 ALTER TABLE `judge_event`
-  MODIFY `id` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `id` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `noshows`
